@@ -1568,9 +1568,19 @@ a:active {
 
     .triangle-border:before,
     .triangle-border:after {
-        display: none; /* Hide the triangles on smaller screens */
+        top: -40px; /* Position triangles above the box */
+        left: 50%; /* Center align the triangles horizontally */
+        transform: translateX(-50%); /* Center align the triangles */
+        border: 20px solid transparent;
+        border-bottom: 20px solid #5a8f00;
+    }
+
+    .triangle-border:after {
+        border-bottom: 20px solid white;
+        top: -33px; /* Adjust positioning for the inner triangle */
     }
 }
+
 
 
 
