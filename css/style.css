@@ -1532,36 +1532,46 @@ a:active {
   padding-right: 5px;
   font-size: 12px;
 }
-.talkbubble {
-    width: auto; /* Adjust width as needed */
-    max-width: 80%; /* Limit maximum width for responsiveness */
+.triangle-border {
+    border: 3px solid #5a8f00;
+    border-radius: 10px;
+    padding: 20px;
     position: relative;
-    border-radius: 20px; /* Border radius for rounded corners */
-    border-width: 30px;
-    
-    padding: 5px; /* Padding inside the bubble */
-    margin: 5px auto; /* Adjust margin for positioning */
-    border: 1px solid #228B22; /* Border color and thickness */
-
+    width: 200px;
+    margin: 0 auto;
 }
 
-.talkbubble:before {
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 12px; /* Adjust vertical position */
-    width: 0;
-    height: 0;
-    border-top: 18px solid transparent;
-    border-right: 26px solid #228B22; /* Match background color */
-    border-bottom: 13px solid transparent;
+.triangle-border:before, 
+.triangle-border:after {
+    content: ''; 
+    position: absolute; 
+    top: 23%; 
+    left: -40px;
+    border: 20px solid transparent;	
+    border-right: 20px solid #5a8f00;    
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }
 
-@media (max-width: 768px) {
-    .talkbubble:before {
-        display: none; /* Hide the pseudo-element on mobile screens */
+.triangle-border:after {
+    border-right: 20px solid white;
+    left: -33px; 
+}
+
+@media (max-width: 700px) {
+    .triangle-border {
+        width: 100%; /* Adjust width for smaller screens */
+        margin-left: 0; /* Reset margin for smaller screens */
+        margin-top: 10px; /* Optional: Adjust margin-top for spacing */
+    }
+
+    .triangle-border:before,
+    .triangle-border:after {
+        display: none; /* Hide the triangles on smaller screens */
     }
 }
+
 
 
 

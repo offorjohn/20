@@ -514,7 +514,8 @@
 
                                 <font size="5" color="#707070">REFER A FRIEND AND EARN UP TO <b>&#x20A6;15,000!</b>
                                     <b><a href="https://vapatrick.com/refer_earn" style="color: red"> CLICK TO LEARN
-                                            MORE...</a></b></font>
+                                            MORE...</a></b>
+                                </font>
 
                         </div>
                     </div>
@@ -535,7 +536,8 @@
                             <h1
                                 class="text-uppercase font-size48 md-font-size42 sm-font-size36 xs-font-size26 font-weight-700 margin-20px-bottom">
                                 <a href="https://vapatrick.com/our_ceo.php" target="_blank" rel="noopener noreferrer"
-                                    title="Click to know more about our Founder and CEO.">Patrick Okunima</a></h1>
+                                    title="Click to know more about our Founder and CEO.">Patrick Okunima</a>
+                            </h1>
                             <p class="width-50 md-width-75 xs-width-100 font-size16 xs-font-size14 border-top border-bottom padding-10px-tb"
                                 style="margin-bottom:5px !important;">Founder & Chief Executive Officer</p>
                             <div class="social-links margin-30px-bottom xs-margin-20px-bottom">
@@ -1129,12 +1131,67 @@
     <!-- End Work Section -->
 
 
-    <!-- Start Testimonials Section -->
+    <style>
+        .test {
+            display: flex;
+            align-items: flex-start;
+            /* Align items at the top */
+            margin-bottom: 20px;
+            /* Optional: Add margin-bottom for spacing */
+        }
+
+        .test img {
+            align-self: center;
+            /* Center the image vertically */
+        }
+
+        .triangle-border {
+
+
+            background: #fff;
+            position: relative;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+
+            width: auto;
+            /* Automatically adjust width to content */
+            max-width: 100%;
+            /* Limit maximum width if necessary */
+            margin-left: 15px;
+            /* Adjust margin to bring closer to the image */
+            background-color: #ffffff;
+            /* Optional: Add a background color */
+            padding: 5px;
+            /* Reduce padding to bring border closer to text */
+            border-radius: 10px;
+            /* Optional: Add border radius for rounded corners */
+            border: 3px solid #228B22;
+            /* Optional: Add border color and thickness */
+            align-self: center;
+            /* Center the talkbubble vertically with the image */
+            position: relative;
+            /* Required for the :before pseudo-element */
+
+        }
+
+        @media (max-width: 768px) {
+            .talkbubble {
+                width: 100%;
+                /* Adjust width for smaller screens */
+                margin-left: 0;
+                /* Reset margin for smaller screens */
+                margin-top: 10px;
+                /* Optional: Adjust margin-top for spacing */
+            }
+        }
+    </style>
+
     <section class="center-col testimonials text-center" data-scroll-index="5" id="review">
         <div class="container">
             <div class="row">
                 <div
-                    class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+                    class="col-12 center-col margin-50px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
                     <h3 class="font-weight-700 font-size32 md-font-size27 sm-font-size24 xs-font-size20 section-title">
                         Reviews</h3>
                 </div>
@@ -1145,36 +1202,32 @@
                         <div class="owl-carousel owl-theme">
                             <div class="row test">
                                 <div class="col-md-2">
-                                    
-                                    <!-- Use the image path from the database -->
-                                     
                                     <img src="img/Passport Pix.png" alt="client image"
                                         style="border-radius:10%; border: 2px solid #228B22; margin-bottom:10px !important; width:100px; margin:auto; margin-top: 5px !important;" />
                                     <h4 style="color: forestgreen;">John Doe</h4>
                                     <h6>COO, CV Wizards</h6>
-                                    
-                                    
                                 </div>
-                              
-                                <div class="talkbubble">
                                 <div class="col-md-10 padleft-0">
-                                    
-                                    <p class="center-col padding-40px-bottom sm-padding-30px-bottom xs-padding-20px-bottom font-size16 xs-font-size14" style="text-align: justify;">
-                                        "Our team has developed an innovative web product that will revolutionize how businesses operate in Nigeria. This cutting-edge solution enables companies to reduce costs, enhance productivity and efficiency, and drive sustainable growth. Additionally, our platform creates opportunities for skilled professionals to monetize their expertise through a gig economy model.
-"
-                                   
-                                    </p>
+                                    <div class="triangle-border">
+                                        <p class="center-col padding-8px-bottom sm-padding-10px-bottom xs-padding-8px-bottom font-size16 xs-font-size14"
+                                            style="text-align: justify;">
+                                            "Our team has developed an innovative web product that will revolutionize
+                                            how businesses operate in Nigeria. This cutting-edge solution enables
+                                            companies to reduce costs, enhance productivity and efficiency, and drive
+                                            sustainable growth. Additionally, our platform creates opportunities for
+                                            skilled professionals to monetize their expertise through a gig economy
+                                            model."
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- End Testimonials Section -->
 
 
