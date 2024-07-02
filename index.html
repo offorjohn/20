@@ -1133,27 +1133,31 @@
     <style>
         .test {
             display: flex;
-            align-items: stretch; /* Stretch both items to the same height */
+            align-items: center; /* Align items at the center */
             margin-bottom: 20px; /* Optional: Add margin-bottom for spacing */
         }
     
         .test img {
-            border-radius: 10%;
-            border: 2px solid #228B22;
-            margin-bottom: 10px !important;
-            width: 100px;
-            height: auto; /* Keep aspect ratio */
-            object-fit: cover; /* Ensure the image covers the area */
+            align-self: stretch; /* Stretch the image to match the height of the container */
         }
+        
+        .triangle-border p {
+        margin: 0; /* Remove default margin of the paragraph */
+        padding: 3px; /* Add padding inside the container */
+        text-align: justify; /* Justify text */
+        font-size: 16px; /* Adjust font size */
+    }
     
         .triangle-border {
             background: #fff;
+            position: relative;
             border-radius: 10px;
             width: auto; /* Automatically adjust width to content */
-            max-width: calc(100% - 120px); /* Adjust max-width to account for image width and margins */
+            max-width: 100%; /* Limit maximum width if necessary */
             margin-left: 15px; /* Adjust margin to bring closer to the image */
             padding: 5px; /* Reduce padding to bring border closer to text */
             border: 3px solid #228B22; /* Add border color and thickness */
+            align-self: stretch; /* Stretch the container to match the height of the image */
             display: flex;
             align-items: center; /* Center the text vertically inside the container */
         }
@@ -1163,7 +1167,6 @@
                 width: 100%; /* Adjust width for smaller screens */
                 margin-left: 0; /* Reset margin for smaller screens */
                 margin-top: 10px; /* Optional: Adjust margin-top for spacing */
-                max-width: 100%; /* Ensure it takes full width on smaller screens */
             }
         }
     </style>
@@ -1183,7 +1186,7 @@
                             <div class="row test">
                                 <div class="col-md-2">
                                     <img src="img/Passport Pix.png" alt="client image"
-                                        style="margin:auto;" />
+                                        style="border-radius:10%; border: 2px solid #228B22; margin-bottom:10px !important; width:100px; margin:auto;" />
                                     <h4 style="color: forestgreen;">John Doe</h4>
                                     <h6>COO, CV Wizards</h6>
                                 </div>
@@ -1192,7 +1195,7 @@
                                         <p class="center-col padding-8px-bottom sm-padding-10px-bottom xs-padding-8px-bottom font-size16 xs-font-size14"
                                             style="text-align: justify;">
                                             "Our team has developed an innovative web product that will revolutionize
-                                             how businesses operate in Nigeria. This cutting-edge solution enables
+                                            how businesses operate in Nigeria. This cutting-edge solution enables
                                             companies to reduce costs, enhance productivity and efficiency, and drive
                                             sustainable growth. Additionally, our platform creates opportunities for
                                             skilled professionals to monetize their expertise through a gig economy
